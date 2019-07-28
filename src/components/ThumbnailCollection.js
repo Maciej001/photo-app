@@ -24,13 +24,14 @@ class ThumbnailCollection extends Component {
         this.startObserving();
     }
 
+    shouldComponentUpdate (prevProps) {
+        return prevProps.photos.length !== this.props.photos.length;
+    }
+
     componentDidUpdate () {
         if (!this.state.observer) {
             this.startObserving();
         }
-    }
-    componentShouldUpdate (prevProps) {
-        return prevProps.photos.length !== this.photos.length;
     }
 
     state = {
