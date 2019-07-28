@@ -1,3 +1,4 @@
+import "jest-styled-components";
 /* eslint-disable max-len */
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
@@ -13,5 +14,5 @@ module.exports = {
     testPathIgnorePatterns: ["\\\\node_modules\\\\"],
     testURL: "http://localhost",
     transformIgnorePatterns: ["<rootDir>/node_modules/"],
-    verbose: false,
+    verbose: false
 };
